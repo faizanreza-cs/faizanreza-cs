@@ -14,9 +14,12 @@ I'm an AI engineer in Delhi. I build LLM agents, document pipelines and analytic
 them on data where the right answer is known, so each README can report how often the method is
 wrong.
 
-Most of my work so far has been in pharma commercial and real-world evidence: market access,
-prescription and claims data, field force. I've also built for retail media, e-commerce and
-internal business tools, and most of the methods aren't specific to any one industry.
+My day job is at a top-10 global pharma company, where I'm an AI analyst: I assess AI use cases
+from across the business and build the ones that go ahead. Before that I worked on analytics for
+its US brands, from launch analysis to forecasting and dashboards, and led the build of an LLM
+text-to-BI tool. Before that I freelanced on Upwork. My own projects also cover retail media,
+e-commerce and internal business tools, and most of the methods aren't specific to any one
+industry.
 
 I'm open to AI engineering and applied ML roles.
 
