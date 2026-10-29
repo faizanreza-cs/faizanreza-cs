@@ -114,8 +114,8 @@ Pharma commercial is where I know the data best:
 | **IQVIA LAAD, APLD** | Patient-level claims. LAAD includes rejected and reversed claims, which is where abandonment shows up. APLD for journeys, switching and persistence |
 | **IntegriChain 867, 852, subnational** | 867 is what wholesalers sold to pharmacies and hospitals, 852 is what they still hold; read together they separate real demand from stocking. Subnational puts those sales at outlet and territory level |
 | **Chargebacks** | The difference between WAC and the contract price, claimed back by wholesalers; it shows contract sales by account |
+| **GPO roster management** | Which hospitals, clinics and pharmacies belong to each group purchasing organization, and from when, so chargebacks and contract prices only go to eligible members |
 | **Calls, samples, NPP** | Rep calls, sample drops and non-personal promotion, for reach, frequency and promotional response |
-| **Roster management** | Who covered which territory and when. Vacancies change how calls and sales should be credited |
 
 Outside pharma I've worked with ad platform data (Amazon Ads and AMC-style conversion paths),
 e-commerce orders and reviews, and finance documents such as invoices and contracts.
