@@ -103,6 +103,18 @@ off, which prescribers should reps call next?*
   a starter kit for internal agents that security teams can sign off: role policies, human
   approvals, PII redaction and a tamper-evident audit log, checked by an eval of what actually ran.
 
+## Pharma commercial data
+
+The syndicated, channel and field data a US brand team runs on, and what I use each for:
+
+| Area | Data | Used for |
+|---|---|---|
+| **Prescriptions** | IQVIA Xponent, Xponent PlanTrak, NPA | TRx/NRx and market share by prescriber, payer plan and nation |
+| **Sales** | IQVIA NSP, IntegriChain subnational | National and territory sales, in units and dollars |
+| **Patients** | IQVIA LAAD, APLD | Patient journeys, persistence, switching, claim rejections and abandonment |
+| **Trade and channel** | IntegriChain 867 and 852, chargebacks | Distributor sell-through and inventory, contract sales by account |
+| **Field** | Calls, samples, non-personal promotion (NPP), roster management | Rep reach and frequency, promotional response, territory alignment |
+
 ## How I build
 
 - **Scored against the truth.** Real data rarely comes with an answer key, so I build a
@@ -119,9 +131,11 @@ off, which prescribers should reps call next?*
 
 | | |
 |---|---|
-| **AI** | Claude (Anthropic API), OpenAI, MCP, tool use, structured outputs, RAG, evals |
-| **Data** | Python, pandas, SQL, DuckDB, Snowflake, sqlglot, pyarrow |
+| **Languages** | Python, SQL |
+| **AI** | Claude (Anthropic API), OpenAI, LangChain, MCP, tool use, structured outputs, RAG, evals |
+| **Data** | pandas, DuckDB, Snowflake, sqlglot, pyarrow |
 | **Models** | scikit-learn, statsmodels, lifelines, SciPy |
 | **Documents** | pdfplumber, pypdfium2, Tesseract OCR |
-| **Shipping** | FastAPI, Streamlit, Docker, GitHub Actions |
-| **Pharma** | Medicaid PDLs and formularies, prior authorization, FAERS signal detection, TRx/NRx share, persistence and adherence, HCP targeting, marketing mix models, geo incrementality |
+| **Apps and BI** | Power BI, Streamlit, FastAPI |
+| **Shipping** | Docker, GitHub Actions |
+| **Analytics** | Medicaid PDLs and formularies, prior authorization, FAERS signal detection, TRx/NRx share, persistence and adherence, HCP targeting, marketing mix models, geo incrementality |
