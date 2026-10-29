@@ -1,7 +1,7 @@
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner.svg" alt="Faizan Reza: AI engineer for pharma commercial and real-world evidence analytics" width="100%">
+  <img src="assets/banner.svg" alt="Faizan Reza: AI engineer, LLM agents, document AI and applied machine learning" width="100%">
 </picture>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-faizanreza-0A66C2)](https://www.linkedin.com/in/faizanreza)
@@ -10,14 +10,15 @@
 
 </div>
 
-I'm an AI engineer in Delhi working on pharma commercial and real-world evidence analytics:
-prescription and claims data, market access, field force and forecasting, and more and more on
-the LLM tools that sit on top of that data.
+I'm an AI engineer in Delhi. I build LLM agents, document pipelines and analytics, and I test
+them on data where the right answer is known, so each README can report how often the method is
+wrong.
 
-Most of the projects below come with a simulator or a test set that knows the right answer, so
-each README can report how often the method is wrong.
+Most of my work so far has been in pharma commercial and real-world evidence: market access,
+prescription and claims data, field force. I've also built for retail media, e-commerce and
+internal business tools, and most of the methods aren't specific to any one industry.
 
-I'm open to AI engineering roles in pharma commercial and RWE analytics.
+I'm open to AI engineering and applied ML roles.
 
 ## Projects
 
@@ -28,10 +29,10 @@ I'm open to AI engineering roles in pharma commercial and RWE analytics.
 </picture>
 </a>
 
-Every state Medicaid program publishes a preferred drug list, each in its own PDF layout, and
-market access teams need to know which brands are preferred, which need prior authorization and
-what changed since last quarter. PDLwatch reads those PDFs into one table, with the page each
-row came from.
+Document AI for drug coverage. Every state Medicaid program publishes a preferred drug list,
+each in its own PDF layout, and market access teams need to know which brands are preferred,
+which need prior authorization and what changed since last quarter. PDLwatch reads those PDFs
+into one table, with the page each row came from.
 
 It runs every morning on 28 public files from 14 states (56,014 rows). 58% of rows are accepted
 automatically and the rest go to a review queue with a reason. In a random check of 60 accepted
@@ -44,6 +45,23 @@ I also generated 106 synthetic PDFs for all 50 states and DC, where the right an
 In the 26 states held out for testing, 2 of the 5,112 rows it accepted automatically were wrong:
 
 <a href="https://github.com/faizanreza-cs/PDLwatch#what-it-found"><img src="assets/pdlwatch-where-rows-go.png" alt="Held-out test states: tables and lists are accepted automatically with no errors; prior authorization prose and damaged scans go to a reviewer" width="100%"></a>
+
+<br>
+
+<a href="https://github.com/faizanreza-cs/Retail-Media-Lab">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logos/retail-media-lab-dark.svg">
+  <img src="assets/logos/retail-media-lab.svg" alt="Retail Media Lab" height="64">
+</picture>
+</a>
+
+Amazon Ads measurement for a brand: what did the ads actually cause, and where should the next
+dollar go? Real ad data can't be shared, so I simulated two years of advertising where the true
+effect of every channel is known, and scored the standard methods against it. Click-based
+attribution credited ads with 5,809 purchases when they caused 3,234, an overcount of 1.8x. A
+geo holdout estimated the incremental ROAS of Amazon DSP at 2.03 (95% CI 1.87-2.19) against a
+true 1.90. A marketing mix model fed a budget optimizer that found 1% more ad-driven sales at
+the same spend.
 
 <br>
 
@@ -60,30 +78,15 @@ reaction and it builds the 2×2 table from FAERS counts, then returns PRR and RO
 intervals and flags the pair using the Evans criteria. FAERS is voluntary reporting, so a flag
 means "worth a closer look", not "the drug causes this", and the server tells the model to say so.
 
-<br>
+### More projects
 
-<a href="https://github.com/faizanreza-cs/PharmaPulse">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/logos/pharmapulse-dark.svg">
-  <img src="assets/logos/pharmapulse.svg" alt="PharmaPulse" height="64">
-</picture>
-</a>
-
-Brand analytics on a synthetic US type 2 diabetes market (4 brands, 2,000 HCPs, 12,000
-patients, 3 years of weekly data): market share, demand forecasting, Kaplan-Meier persistence,
-PDC adherence, HCP targeting and promotional response. ETS forecasts came out best, at 3.1% mean
-WAPE on a 13-week holdout. An LLM agent answers questions by calling the same functions as
-tools, so the numbers in its answers come from tested code.
-
-### Other projects
-
+- <img src="assets/marks/pharmapulse.svg" width="14" alt=""> **[PharmaPulse](https://github.com/faizanreza-cs/PharmaPulse)**:
+  brand analytics with an LLM agent on top. Forecasting, market share, patient persistence and
+  HCP targeting on a synthetic diabetes market; the agent answers by calling those functions as
+  tools, so its numbers come from tested code.
 - <img src="assets/marks/shelfsense.svg" width="14" alt=""> **[ShelfSense](https://github.com/faizanreza-cs/Shelfsense)**:
-  recommendations and review analysis for a supplements store. On 91,227 real Amazon reviews
-  the hybrid recommender beat the best single model by 28%.
-- <img src="assets/marks/retail-media-lab.svg" width="14" alt=""> **[Retail Media Lab](https://github.com/faizanreza-cs/Retail-Media-Lab)**:
-  Amazon Ads attribution, geo holdouts and a marketing mix model, tested on a simulator that
-  knows each channel's true effect. Click-based attribution credited ads with 1.8x the purchases
-  they actually caused.
+  recommendations and review analysis for an online supplements store. On 91,227 real Amazon
+  reviews the hybrid recommender beat the best single model by 28%.
 - <img src="assets/marks/ragdesk.svg" width="14" alt=""> **[RAGdesk](https://github.com/faizanreza-cs/Ragdesk)**:
   Q&A over company documents with a citation for each sentence. It says it doesn't know when
   retrieval comes up empty.
@@ -94,7 +97,9 @@ tools, so the numbers in its answers come from tested code.
   guardrails for internal agents: tool permissions per role, human approval for risky actions,
   PII masking and a hash-chained audit log.
 
-## Pharma data I've worked with
+## Domain knowledge
+
+Pharma commercial is where I know the data best:
 
 | Data | Notes |
 |---|---|
@@ -106,6 +111,9 @@ tools, so the numbers in its answers come from tested code.
 | **Calls, samples, NPP** | Rep calls, sample drops and non-personal promotion, for reach, frequency and promotional response |
 | **Roster management** | Who covered which territory and when. Vacancies change how calls and sales should be credited |
 
+Outside pharma I've worked with ad platform data (Amazon Ads and AMC-style conversion paths),
+e-commerce orders and reviews, and finance documents such as invoices and contracts.
+
 ## Tools
 
 | | |
@@ -116,4 +124,4 @@ tools, so the numbers in its answers come from tested code.
 | **Apps** | FastAPI, Streamlit, Docker, GitHub Actions |
 | **Stats and ML** | scikit-learn, statsmodels, lifelines, SciPy |
 | **Documents** | pdfplumber, Tesseract OCR |
-| **Methods** | Forecasting (ETS, gradient boosting), survival analysis, PDC adherence, HCP segmentation, marketing mix models, geo holdouts, disproportionality analysis (PRR, ROR) |
+| **Methods** | Forecasting, recommenders, survival analysis, attribution, diff-in-diff and synthetic control, marketing mix models, signal detection (PRR, ROR) |
