@@ -15,13 +15,16 @@ them on data where the right answer is known, so each README can report how ofte
 wrong.
 
 My day job is at a top-10 global pharma company, where I'm an AI analyst: I assess AI use cases
-from across the business and build the ones that go ahead. Before that I worked on analytics for
-its US brands, from launch analysis to forecasting and dashboards, and led the build of an LLM
-text-to-BI tool. Before that I freelanced on Upwork. My own projects also cover retail media,
-e-commerce and internal business tools, and most of the methods aren't specific to any one
-industry.
+from across the business and build the ones that go ahead. Two of mine: a Dataiku skill that lets
+GitHub Copilot do routine Dataiku work, and an agent that writes project documentation. Before
+that I worked on analytics for its US brands, from launch analysis to forecasting and dashboards,
+and led the build of an LLM text-to-BI tool. Earlier I freelanced for remote clients. My own
+projects also cover retail media, e-commerce and internal business tools, and most of the methods
+aren't specific to any one industry.
 
-I'm open to AI engineering and applied ML roles.
+**I take freelance projects** (US and European hours are fine): documenting and cleaning up
+Dataiku projects, moving Alteryx workflows to Dataiku, and LLM agents that work on company data.
+Email me at [faizanreza01@gmail.com](mailto:faizanreza01@gmail.com).
 
 ## Projects
 
@@ -123,6 +126,7 @@ e-commerce orders and reviews, and finance documents such as invoices and contra
 |---|---|
 | **Languages** | Python, SQL |
 | **LLMs** | Claude (Anthropic API), OpenAI, LangChain, MCP, RAG, evals |
+| **Dataiku** | Dataiku DSS, Alteryx, GitHub Copilot skills |
 | **Data and BI** | pandas, DuckDB, Snowflake, Power BI |
 | **Apps** | FastAPI, Streamlit, Docker, GitHub Actions |
 | **Stats and ML** | scikit-learn, statsmodels, lifelines, SciPy |
