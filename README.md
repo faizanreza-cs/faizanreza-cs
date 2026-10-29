@@ -14,17 +14,17 @@ I'm an AI engineer in Delhi. I build LLM agents, document pipelines and analytic
 them on data where the right answer is known, so each README can report how often the method is
 wrong.
 
-My day job is at a top-10 global pharma company, where I'm an AI analyst: I assess AI use cases
+I worked in AI for Big4 global pharma company, where I assess AI use cases
 from across the business and build the ones that go ahead. Two of mine: a Dataiku skill that lets
 GitHub Copilot do routine Dataiku work, and an agent that writes project documentation. Before
 that I worked on analytics for its US brands, from launch analysis to forecasting and dashboards,
-and led the build of an LLM text-to-BI tool. Earlier I freelanced for remote clients. My own
+and led the build of an LLM text-to-BI tool. My own
 projects also cover retail media, e-commerce and internal business tools, and most of the methods
 aren't specific to any one industry.
 
-**I take freelance projects** (US and European hours are fine): documenting and cleaning up
+**Open for paid projects** (US and European hours are fine): documenting and cleaning up
 Dataiku projects, moving Alteryx workflows to Dataiku, and LLM agents that work on company data.
-Email me at [faizanreza01@gmail.com](mailto:faizanreza01@gmail.com).
+Email at [faizanreza01@gmail.com](mailto:faizanreza01@gmail.com).
 
 ## Projects
 
