@@ -40,7 +40,7 @@ each in its own PDF layout, and market access teams need to know which brands ar
 which need prior authorization and what changed since last quarter. PDLwatch reads those PDFs
 into one table, with the page each row came from.
 
-It runs every morning on 28 public files from 14 states (56,014 rows). 58% of rows are accepted
+It runs every morning on 28 public files from 14 states (55,836 rows). 59% of rows are accepted
 automatically and the rest go to a review queue with a reason. In a random check of 60 accepted
 rows the status was right in all 60. Earlier checks are how I found the layouts it misread: New
 York's step therapy table was being read as part of the drug list, and Utah's two tables per
@@ -51,6 +51,8 @@ I also generated 106 synthetic PDFs for all 50 states and DC, where the right an
 In the 26 states held out for testing, 2 of the 5,112 rows it accepted automatically were wrong:
 
 <a href="https://github.com/faizanreza-cs/PDLwatch#what-it-found"><img src="assets/pdlwatch-where-rows-go.png" alt="Held-out test states: tables and lists are accepted automatically with no errors; prior authorization prose and damaged scans go to a reviewer" width="100%"></a>
+
+[Website](https://faizanreza-cs.github.io/PDLwatch/) · [Code](https://github.com/faizanreza-cs/PDLwatch)
 
 <br>
 
@@ -69,6 +71,8 @@ geo holdout estimated the incremental ROAS of Amazon DSP at 2.03 (95% CI 1.87-2.
 true 1.90. A marketing mix model fed a budget optimizer that found 1% more ad-driven sales at
 the same spend.
 
+[Website](https://faizanreza-cs.github.io/Retail-Media-Lab/) · [Code](https://github.com/faizanreza-cs/Retail-Media-Lab)
+
 <br>
 
 <a href="https://github.com/faizanreza-cs/Pharma-MCP">
@@ -84,22 +88,24 @@ reaction and it builds the 2×2 table from FAERS counts, then returns PRR and RO
 intervals and flags the pair using the Evans criteria. FAERS is voluntary reporting, so a flag
 means "worth a closer look", not "the drug causes this", and the server tells the model to say so.
 
+[Website](https://faizanreza-cs.github.io/Pharma-MCP/) · [Code](https://github.com/faizanreza-cs/Pharma-MCP)
+
 ### More projects
 
-- <img src="assets/marks/pharmapulse.svg" width="14" alt=""> **[PharmaPulse](https://github.com/faizanreza-cs/PharmaPulse)**:
+- <img src="assets/marks/pharmapulse.svg" width="14" alt=""> **[PharmaPulse](https://github.com/faizanreza-cs/PharmaPulse)** ([website](https://faizanreza-cs.github.io/PharmaPulse/)):
   brand analytics with an LLM agent on top. Forecasting, market share, patient persistence and
   HCP targeting on a synthetic diabetes market; the agent answers by calling those functions as
   tools, so its numbers come from tested code.
-- <img src="assets/marks/shelfsense.svg" width="14" alt=""> **[ShelfSense](https://github.com/faizanreza-cs/Shelfsense)**:
+- <img src="assets/marks/shelfsense.svg" width="14" alt=""> **[ShelfSense](https://github.com/faizanreza-cs/Shelfsense)** ([website](https://faizanreza-cs.github.io/Shelfsense/)):
   recommendations and review analysis for an online supplements store. On 91,227 real Amazon
   reviews the hybrid recommender beat the best single model by 28%.
-- <img src="assets/marks/ragdesk.svg" width="14" alt=""> **[RAGdesk](https://github.com/faizanreza-cs/Ragdesk)**:
+- <img src="assets/marks/ragdesk.svg" width="14" alt=""> **[RAGdesk](https://github.com/faizanreza-cs/Ragdesk)** ([website](https://faizanreza-cs.github.io/Ragdesk/)):
   Q&A over company documents with a citation for each sentence. It says it doesn't know when
   retrieval comes up empty.
-- <img src="assets/marks/docflow-agent.svg" width="14" alt=""> **[DocFlow Agent](https://github.com/faizanreza-cs/Docflow-agent)**:
+- <img src="assets/marks/docflow-agent.svg" width="14" alt=""> **[DocFlow Agent](https://github.com/faizanreza-cs/Docflow-agent)** ([website](https://faizanreza-cs.github.io/Docflow-agent/)):
   reads invoices, receipts and contracts into structured data, checks the totals, catches
   duplicate invoices and sends anything off to a review queue.
-- <img src="assets/marks/agentkit-enterprise.svg" width="14" alt=""> **[AgentKit Enterprise](https://github.com/faizanreza-cs/agentkit-enterprise)**:
+- <img src="assets/marks/agentkit-enterprise.svg" width="14" alt=""> **[AgentKit Enterprise](https://github.com/faizanreza-cs/agentkit-enterprise)** ([website](https://faizanreza-cs.github.io/agentkit-enterprise/)):
   guardrails for internal agents: tool permissions per role, human approval for risky actions,
   PII masking and a hash-chained audit log.
 
@@ -125,7 +131,7 @@ e-commerce orders and reviews, and finance documents such as invoices and contra
 | | |
 |---|---|
 | **Languages** | Python, SQL |
-| **LLMs** | Claude (Anthropic API), OpenAI, LangChain, MCP, RAG, evals |
+| **LLMs** | Anthropic API, OpenAI, LangChain, MCP, RAG, evals |
 | **Dataiku** | Dataiku DSS, Alteryx, GitHub Copilot skills |
 | **Data and BI** | pandas, DuckDB, Snowflake, Power BI |
 | **Apps** | FastAPI, Streamlit, Docker, GitHub Actions |
